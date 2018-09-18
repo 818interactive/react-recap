@@ -1,7 +1,8 @@
 import * as Const from '../utils/constants';
 
-export const setMessage = ()=> {
+export const setMessage = (data)=> {
   return {
-    type: 'SET_MESSAGE'
+    type: Const.SET_MESSAGE,
+    data
   }
 }
