@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-export default()=> {
-  return(
+import MessengerContainer from './containers/messenger/MessengerContainer';
+
+export default()=>(
     <div>
-      Hey
+      <Route exact path='/' component={MessengerContainer}/>
     </div>
   )
-}

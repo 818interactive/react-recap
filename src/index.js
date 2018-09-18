@@ -11,7 +11,7 @@ import registerServiceWorker from './service_worker/registerServiceWorker';
 
 const store = createStore(reducer,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-const app = (
+const router = (
   <Provider store={store}>
     <BrowserRouter>
       <App/>
@@ -19,5 +19,5 @@ const app = (
   </Provider>
 );
 
-ReactDOM.render(app, document.getElementById('root'));
+ReactDOM.render(router, document.getElementById('root'));
 registerServiceWorker();
